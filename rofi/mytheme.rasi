@@ -1,0 +1,58 @@
+configuration {
+    font: "JetBrains Mono 12";
+    show-icons: true;
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+}
+
+* {
+    background: #0a3f82;
+    foreground: #e0e0e0;
+
+    selected-background: #cbd8f0;
+    selected-foreground: #0a3f82;
+}
+
+window {
+    background-color: #0a3f82;
+    border: 0;
+    border-radius: 10px;
+    padding: 18px;
+    width: 40%;
+    location: center;
+    anchor: center;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [inputbar, listview];
+    spacing: 8px;
+}
+
+inputbar {
+    background-color: #12345a;
+    border: 0;
+    border-radius: 6px;
+    padding: 6px;
+    text-color: #e0e0e0;
+}
+
+listview {
+    background-color: #0a3f82;
+    spacing: 5px;
+    scrollbar: true;
+    dynamic: true;
+}
+
+element {
+    background-color: transparent;
+    text-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+element selected {
+    background-color: #cbd8f0;
+    text-color: #0a3f82;
+}
